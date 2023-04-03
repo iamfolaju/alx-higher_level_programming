@@ -1,6 +1,6 @@
 # Python - More Classes and Objects
 
-![](https://editor.analyticsvidhya.com/uploads/12985class-object-featured-image.png)
+![](https://lh6.googleusercontent.com/yPsibbUh1aHOvi0U3-wtdlNpWWutbyYULv1PLkx0QlOOq81DiXVvPgvKVrtY7Ef1yZF5NLabXrHBjHL80lx9hTqR_64jGRFZdbR9FIs4LDR9RcEn1M9LX_D5i4fYKR4vNZA-dZ9R)
 
 
 # Learning Objectives
