@@ -1,22 +1,27 @@
 #!/usr/bin/python3
-''' Define a peak-finding algorithm '''
+""" Finds a peak in a list of unsorted integers
+    A peak is an Element in An array if its NOT smaller
+    than its neighbours.
+"""
 
 
 def find_peak(list_of_integers):
-    ''' Find a peak in a list of unsorted integers '''
-    loi = list_of_integers
-    if loi == []:
+    """ returns the a peak in a an unsored list"""
+
+    if list_of_integers == []:
         return None
 
-    size = len(loi)
+    size = len(list_of_integers)
     if size == 1:
-        return loi[0]
-    if size == 2:
-        return max(loi)
+        return list_of_integers[0]
+    elif size == 2:
+        return max(list_of_integers)
 
-    mid = int(size / 2)
-    if loi[mid - 1] < loi[mid] > loi[mid + 1]:
-        return loi[mid]
-    if loi[mid + 1] > loi[mid - 1]:
-        return find_peak(loi[mid:])
-    return find_peak(loi[:mid])
+    half = int(size / 2)
+    peak = list_of_integers[half]
+    if peak > list_of_integers[half - 1] and peak > list_of_integers[half + 1]:
+        return peak
+    elif peak < list_of_integers[half - 1]:
+        return find_peak(list_of_integers[:half])
+    else:
+        return find_peak(list_of_integers[half + 1:])
